@@ -39,3 +39,51 @@ body {
   font-size: 16px;
   color: #212529;
 }
+
+.react-chatbot-kit-chat-container {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.react-chatbot-kit-chat-message-container {
+  overflow: auto !important;
+  height: 100% !important;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  height: 85% !important;
+}
+.react-chatbot-kit-chat-header {
+  display: none !important;
+}
+.react-chatbot-kit-chat-input {
+  outline: none !important;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  max-width: 100% !important;
+  display: flex;
+  width: auto !important;
+  align-items: center;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  margin-left: 0 !important;
+}
+
+.react-chatbot-kit-user-chat-message {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #585858;
+  font-weight: medium;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+}

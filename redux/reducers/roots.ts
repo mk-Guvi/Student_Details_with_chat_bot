@@ -1,14 +1,19 @@
-import { cloneDeep } from 'lodash';
 import { ROOT_ACTIONS } from '../action-types';
 
 export type RootI = {};
 
+export type StudentDetailsT = {
+  studentName?: string;
+  studentAge?: number;
+  disableActions?: boolean;
+};
+
 export type RootReducerT = {
-  root: RootI;
+  studentDetails: StudentDetailsT;
 };
 
 const rootReducerContainer: RootReducerT = {
-  root: {},
+  studentDetails: {},
 };
 
 export const rootContainerReducer = (
@@ -18,7 +23,9 @@ export const rootContainerReducer = (
   switch (action.type) {
     case ROOT_ACTIONS.RESET:
       return {};
+    case ROOT_ACTIONS.UPDATE_STUDENT_DETAILS:
+      return { ...state, studentDetails: { ...state.studentDetails, ...action.payload } };
     default:
-      return cloneDeep(state);
+      return state;
   }
 };

@@ -1,7 +1,8 @@
 import { NextPage } from 'next';
+import { HomeContainer } from '../containers/home';
 
-const Home: NextPage = () => {
-  return <div className="h-screen w-screen font-bold flex flex-col justify-center items-center">It&apos;s the begining...</div>;
+const HomePage: NextPage = () => {
+  return <HomeContainer />;
 };
 
-export default Home;
+export default HomePage;
